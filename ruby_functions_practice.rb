@@ -36,3 +36,41 @@ def add_string_as_number (string_1, string_2)
   answer = string_1.to_i + string_2.to_i
   return answer
 end
+
+def number_to_full_month_name (numMonth)
+  month = numMonth.to_i
+result =  case month
+  when 1
+    "January"
+  when 2
+    "February"
+  when 3
+    "March"
+  when 4
+    "April"
+  when 5
+    "May"
+  when 6
+    "June"
+  when 7
+    "July"
+  when 8
+    "August"
+  when 9
+    "September"
+  when 10
+    "October"
+  when 11
+    "November"
+  when 12
+    "December"
+  else
+    "This is not a month"
+  end
+  return result
+end
+
+def number_to_short_month_name(num)
+  result = number_to_full_month_name(num)
+  return result[0..2]
+end
