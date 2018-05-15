@@ -74,3 +74,19 @@ def number_to_short_month_name(num)
   result = number_to_full_month_name(num)
   return result[0..2]
 end
+
+
+def volume_of_cube(side)
+  volume = side * side * side
+  return volume
+end
+
+def volume_of_sphere(rad)
+  result = (4/3.to_f)*(Math::PI)*(6**3)
+  return result
+end
+
+def fahrenheit_to_celsius(temp)
+  result = (temp -32)/1.8
+  return result
+end
