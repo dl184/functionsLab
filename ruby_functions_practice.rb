@@ -21,3 +21,8 @@ def divide (num1, num2)
   answer = num1 / num2
   return answer
 end
+
+def length_of_string (string)
+  answer = string.length()
+  return answer
+end
