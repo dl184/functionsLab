@@ -65,7 +65,7 @@ result =  case month
   when 12
     "December"
   else
-    "This is not a month"
+    "This isn't a month"
   end
   return result
 end
